@@ -99,17 +99,13 @@ confirmBtn.addEventListener('click', ()=> {
         var countValue = li.classList.contains('checked') ? count++ : count;
     })
 
-    console.log(count);
-
     if(count == 5) {
 
-        console.log(count);
          if(modalPassword.value === modalConfirmPassword.value) {
              errorMsg.innerHTML = "";
              success.innerHTML = 'Your password has been successfully reset.';
              match.innerHTML = '';
             } else {
-                console.log(match);
                 match.innerHTML = 'Both passwords should match.';
                 errorMsg.innerHTML = "";
             }
@@ -128,7 +124,6 @@ backBtn.addEventListener('click', ()=> {
     document.querySelector('.info-box').style.display = 'block';
 
     checkList.forEach((li) => {
-        console.log(checkList);
         if(li.classList.contains('checked')) {
             li.classList.remove('checked')
         }

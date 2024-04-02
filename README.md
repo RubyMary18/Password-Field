@@ -23,12 +23,13 @@ Users should be able to:
 
 ### Screenshot
 
-[Desktop-view](./assets/images/)
-[Mobile-view](./assets/images/)
+[Desktop-view](./assets/images/Screencapture-Desktop.png)
+[Reset-Password](./assets/images/Screencapture-Reset.png)
+[Password-Validation](./assets/images/Screenshot-Validation.png)
 
 ### Links
 
-- Solution URL: []
+- Solution URL: [https://github.com/RubyMary18/Password-Field]
 - Live Site URL: []
 
 ## My process
