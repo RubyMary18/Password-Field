@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" media="screen" href="assets/css/style.css" />
+    <title>Password Field</title>
+  </head>
+  <body>
+    <!--container start-->
+    <div class="container">
+      <div class="info-box">
+        <!--header section start-->
+        <header>
+          <h1>Enter your password</h1>
+        </header>
+        <!--header section ends-->
+        <!--main section start-->
+        <main>
+          <div class="profile-container">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Profile Image"
+              />
+            </figure>
+            <div class="details">
+              <p>Business Account</p>
+              <p>Sarah Bills</p>
+            </div>
+          </div>
+          <form action="#FIX" method="post">
+            <div class="password-container">
+              <label for="password">Password</label>
+              <div class="password-box">
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="**************"
+                />
+                <span class="icon eye">Eye</span>
+              </div>
+            </div>
+            <div class="toggle-container">
+              <div class="toggle-box">
+                <div class="toggle"></div>
+                <p>Stay signed in</p>
+              </div>
+              <button type="button">Continue</button>
+            </div>
+            <div class="reset-container">
+              <a href="#FIXME">Reset password</a>
+            </div>
+          </form>
+        </main>
+        <!--main section end-->
+      </div>
+      <div class="reset-modal">
+        <div class="reset-modal-container">
+          <p>Set your new password</p>
+          <p>
+            Your new password should be different from passwords previously
+            used.
+          </p>
+          <form action="#FIX" method="post">
+            <div class="password-div">
+              <label for="password1">New Password</label>
+              <div class="pass-input">
+                <input type="password" id="password1" class="modal-password" />
+                <span></span>
+                <div class="error-container">
+                  <p id="error">error</p>
+                </div>
+                <div class="password-check-div">
+                  <ul>
+                    <li>Atleast 8 characters</li>
+                    <li>One uppercase letter</li>
+                    <li>One lowercase letter</li>
+                    <li>One number</li>
+                    <li>One special character</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="confirm-div">
+              <label for="password2">Confirm New Password</label>
+              <div class="confirm-input">
+                <input type="password" id="password2" class="modal-password" />
+                <span></span>
+              </div>
+              <div class="match">
+                <p id="match-msg"></p>
+              </div>
+            </div>
+            <button type="button" class="confirm-btn">Confirm</button>
+            <div class="successful">
+              <p id="confirm-message"></p>
+            </div>
+          </form>
+          <div class="back-box">
+            <a href="#FIX">Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--container end-->
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

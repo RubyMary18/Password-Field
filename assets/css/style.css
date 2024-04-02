@@ -1,0 +1,625 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 57.5%;
+  background-color: #f6f7f8;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 157px;
+}
+
+.info-box,
+.reset-modal {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 80px;
+  flex-grow: 1;
+}
+
+.reset-modal {
+  padding: 60px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #132b50;
+  background-color: #fff;
+}
+/*=================================
+  Header styling starts here
+=================================*/
+
+h1 {
+  font-size: 29px;
+}
+
+header {
+  margin-bottom: 28px;
+}
+
+/*=================================
+  Header styling ends here
+=================================*/
+
+/*=================================
+  main styling starts here
+=================================*/
+
+.profile-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.profile-container figure {
+  width: 73px;
+  height: 73px;
+}
+
+.profile-container figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.details p:nth-of-type(1) {
+  font-size: 13px;
+}
+
+.details p:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.password-box input {
+  height: 55px;
+  outline: none;
+  border: 2px solid #596883;
+  border-radius: 5px;
+  width: 88%;
+  padding-left: 50px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.password-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.password-box::before {
+  position: absolute;
+  content: "\eece";
+  font-family: "remixicon";
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  top: 50%;
+  background: #fff;
+  color: #000;
+  transform: translateY(-50%);
+  font-size: 22px;
+  line-height: 20px;
+}
+
+.icon {
+  text-indent: -9999px;
+  position: relative;
+}
+
+.icon::before {
+  content: "\f070";
+  position: absolute;
+  text-indent: 0;
+  font-family: "FontAwesome";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+}
+
+::placeholder {
+  color: #132b50;
+  top: 60%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.toggle-box p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.toggle {
+  width: 55px;
+  height: 34px;
+  border: 2px solid #8995a7;
+  border-radius: 25px;
+  position: relative;
+}
+
+.toggle::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #122849;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: space-between;
+  width: 88%;
+  margin-bottom: 34px;
+}
+
+.toggle-container button {
+  height: 48px;
+  width: 27.5%;
+  background-color: #132b50;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 14.5px;
+  letter-spacing: 1.1px;
+  border: none;
+}
+
+.password-container {
+  margin-bottom: 30px;
+}
+
+.toggle-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle-box p {
+  color: #304465;
+}
+
+.reset-container a {
+  font-size: 15px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #1e3458;
+}
+
+.icon:hover,
+.toggle:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.icon.active::before {
+  content: "\f06e";
+}
+
+.password-box.active::before {
+  content: "\eed2";
+}
+
+.toggle.show::before {
+  left: calc(100% - 30px);
+  background-color: #296cd0;
+}
+
+.toggle.show {
+  border: 2px solid #296cd0;
+}
+
+button:hover {
+  background-color: #296cd0;
+  transition: 0.3s ease;
+  border: none;
+  color: #fff;
+}
+
+.password-div,
+.confirm-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.password-div input,
+.confirm-div input {
+  height: 50px;
+  border-radius: 5px;
+  padding: 0 40px 0 15px;
+  width: 100%;
+}
+
+.reset-modal-container {
+  padding: 30px;
+}
+
+.reset-modal-container p:nth-of-type(1) {
+  font-size: 23px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.reset-modal-container p:nth-of-type(2) {
+  font-size: 13px;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.reset-modal-container input:nth-of-type(1) {
+  margin-bottom: 30px;
+}
+
+.reset-modal-container button {
+  width: 100%;
+  height: 45px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.pass-input span,
+.confirm-input span {
+  position: relative;
+}
+
+.pass-input span::after,
+.confirm-input span::after {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 47%;
+  transform: translateY(-50%);
+  right: 15px;
+  font-family: "FontAwesome";
+  content: "\f070";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pass-input span.active::after {
+  content: "\f06e";
+}
+
+.password-div {
+  position: relative;
+}
+
+.pass-input input::placeholder,
+.confirm-input input::placeholder {
+  font-weight: bold;
+}
+
+.password-check-div ul li {
+  position: relative;
+  padding-left: 30px;
+}
+
+.password-check-div ul li::before {
+  position: absolute;
+  content: "\f00c";
+  font-family: "FontAwesome";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #d6f0dd;
+  color: #fff;
+}
+
+.reset-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 35%;
+}
+
+.password-check-div {
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  top: 81px;
+  border-radius: 15px;
+  border: 2px solid #1aad41;
+  z-index: 100;
+  font-size: 13px;
+  line-height: 2;
+  padding: 10px;
+  transform: translateY(40px);
+  display: none;
+}
+
+.pass-input input:focus ~ .password-check-div {
+  transform: translateY(5px);
+  display: block;
+}
+
+.password-check-div ul li.checked::before {
+  background-color: #12a53d;
+}
+
+.error-container {
+  position: absolute;
+  bottom: 0;
+}
+
+#error {
+  color: #ff0000;
+  bottom: 0;
+  font-size: 11px;
+  padding-top: 5px;
+  display: none;
+}
+
+.back-box {
+  text-align: end;
+  margin-top: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+}
+
+.back-box a {
+  position: relative;
+}
+
+.back-box a::before {
+  content: "\f060";
+  font-family: "FontAwesome";
+  width: 20px;
+  height: 20px;
+  left: -25px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm-div {
+  position: relative;
+}
+
+.match {
+  position: absolute;
+  bottom: -5px;
+}
+
+#confirm-message,
+#match-msg {
+  font-size: 12px;
+  text-align: center;
+  display: block;
+}
+
+#confirm-message {
+  padding-top: 5px;
+  color: #12a53d;
+}
+
+#match-msg {
+  color: #ff0000;
+}
+
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/
+
+/*=================================
+  footer styling ends here
+=================================*/
+
+/*Responsive Design Desktop-first-approach*/
+/*media query for 1440px starts here*/
+@media only screen and (max-width: 1496px) {
+  .container {
+    padding: 0 130px;
+  }
+
+  .info-box,
+  .reset-modal {
+    padding: 60px;
+  }
+
+  .reset-modal-container {
+    padding: 0;
+  }
+}
+
+/*media query for 1300px starts here*/
+@media only screen and (max-width: 1300px) {
+  .container {
+    padding: 0 90px;
+  }
+
+  .info-box {
+    padding: 50px;
+  }
+
+  .reset-modal {
+    padding: 65px;
+    width: 45%;
+  }
+
+  .toggle-container button {
+    width: 30%;
+  }
+
+  .toggle-box p {
+    font-size: 13px;
+  }
+}
+
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 27px;
+  }
+
+  .container {
+    padding: 0px 60px;
+  }
+
+  .reset-modal {
+    padding: 40px;
+  }
+}
+
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+  .details p:nth-of-type(2) {
+    font-size: 15px;
+  }
+
+  .reset-container a {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 70%;
+  }
+
+  .reset-modal {
+    padding: 30px;
+    width: 51%;
+  }
+
+  #error {
+    font-size: 11px;
+  }
+}
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  .toggle-container button {
+    font-size: 13px;
+    height: 45px;
+  }
+
+  .info-box {
+    padding: 20px;
+  }
+
+  .container {
+    width: 86%;
+  }
+
+  .reset-container a {
+    font-size: 13px;
+  }
+
+  .toggle-box p {
+    font-size: 12px;
+  }
+
+  .reset-modal {
+    padding: 25px;
+    width: 65%;
+  }
+}
+
+/*media query for 540px starts here*/
+@media only screen and (max-width: 540px) {
+  .container {
+    padding: 0px 15px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .reset-modal {
+    padding: 20px;
+    width: 75%;
+  }
+}
+
+/*media query for 480px starts here*/
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 23px;
+  }
+
+  .toggle-box p {
+    font-size: 11px;
+  }
+
+  .reset-container a {
+    font-size: 12px;
+  }
+
+  .toggle {
+    width: 50px;
+    height: 30px;
+  }
+
+  .toggle-container button {
+    font-size: 11px;
+    height: 35px;
+  }
+
+  .toggle-box {
+    gap: 3px;
+  }
+
+  .details p:nth-of-type(2) {
+    font-size: 14px;
+  }
+
+  .details p:nth-of-type(1) {
+    font-size: 12px;
+  }
+
+  .reset-modal {
+    padding: 10px;
+    width: 86%;
+  }
+}
