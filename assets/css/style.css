@@ -406,6 +406,11 @@ button:hover {
 
 .back-box a {
   position: relative;
+  color: #000;
+}
+
+.back-box a:hover {
+  color: #296cd0;
 }
 
 .back-box a::before {
